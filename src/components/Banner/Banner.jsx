@@ -3,14 +3,17 @@ import "./Banner.css";
 
 const Banner = () => {
   return (
-    <div className="hero min-h-[600px] rounded-3xl mb-24">
+    <div className="hero min-h-[600px] rounded-3xl mb-24 ">
       <div className="hero-overlay bg-opacity-60 rounded-3xl"></div>
-      <div className="hero-content text-center text-neutral-content">
-        <div className="max-w-[80%] space-y-9">
-          <h1 className="text-3xl lg:text-5xl font-bold">
-            Discover an exceptional cooking <br /> class tailored for you!
+      <div className="hero-content text-center text-neutral-content ">
+        <div className="w-full lg:max-w-[80%] space-y-6 lg:space-y-9 ">
+          <h1 className="text-4xl lg:text-5xl font-bold leading-10">
+            Discover an exceptional cooking
           </h1>
-          <p className="">
+          <h1 className="text-4xl lg:text-5xl font-bold">
+          class tailored for you!
+          </h1>
+          <p className="leading-10">
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae
           </p>
