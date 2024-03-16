@@ -7,7 +7,7 @@ const Table2 = () => {
     {/* head */}
     <thead>
       <tr>
-        <th></th>
+        <th>SL</th>
         <th>Name</th>
         <th>Time</th>
         <th>Calories</th>
