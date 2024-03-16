@@ -1,0 +1,98 @@
+[
+    {
+        "recipe_image": "https://i.ibb.co/tpjMk9X/card-1.jpg",
+        "recipe_id": "001",
+        "recipe_name": "Classic Margherita Pizza",
+        "short_description": "Traditional Italian pizza topped with fresh mozzarella, and basil.",
+        "ingredients": [
+            "250 g pizza dough",
+            "150 g fresh tomatoes",
+            "200 g mozzarella cheese",
+            "A handful of fresh basil leaves",
+            "A mixed vegetables",
+            "A slice lemon"
+        ],
+        "preparing_time": 45,
+        "calories": 420
+    },
+    {
+        "recipe_image": "https://i.ibb.co/Z850z6v/card-2.jpg",
+        "recipe_id": "002",
+        "recipe_name": "Vegetable Stir-Fry",
+        "short_description": "A colorful and nutritious stir-fry loaded with assorted vegetables.",
+        "ingredients": [
+            "300 g mixed vegetables",
+            "100 g tofu",
+            "120 ml soy sauce",
+            "2 cloves garlic, minced",
+            "A mixed vegetables",
+            "A slice lemon"
+        ],
+        "preparing_time": 25,
+        "calories": 280
+    },
+    {
+        "recipe_image": "https://i.ibb.co/4mBstK9/card-3.jpg",
+        "recipe_id": "003",
+        "recipe_name": "Lemon Garlic Shrimp Pasta",
+        "short_description": "A zesty pasta dish with succulent shrimp, garlic, and a hint of lemon.",
+        "ingredients": [
+            "300 g spaghetti",
+            "200 g shrimp",
+            "2 cloves garlic, minced",
+            "1 lemon, zest and juice",
+            "A mixed vegetables",
+            "A slice lemon"
+        ],
+        "preparing_time": 35,
+        "calories": 380
+    },
+    {
+        "recipe_image": "https://i.ibb.co/NyrqnBV/card-4.jpg",
+        "recipe_id": "004",
+        "recipe_name": "Creamy Mushroom Risotto",
+        "short_description": "A comforting and creamy risotto with flavorful mushrooms.",
+        "ingredients": [
+            "250 g Arborio rice",
+            "400 g mushrooms",
+            "500 ml vegetable broth",
+            "100 ml heavy cream",
+            "A mixed vegetables",
+            "A slice lemon"
+        ],
+        "preparing_time": 40,
+        "calories": 360
+    },
+    {
+        "recipe_image": "https://i.ibb.co/Vx8vYhD/card-5.jpg",
+        "recipe_id": "005",
+        "recipe_name": "Grilled Chicken Salad",
+        "short_description": "A healthy salad with grilled chicken, fresh greens, and dressing.",
+        "ingredients": [
+            "400 g chicken breast",
+            "150 g mixed salad greens",
+            "1 cucumber, sliced",
+            "100 g cherry tomatoes",
+            "A mixed vegetables",
+            "A slice lemon"
+        ],
+        "preparing_time": 30,
+        "calories": 280
+    },
+    {
+        "recipe_image": "https://i.ibb.co/PTL1Xk5/card-6.jpg",
+        "recipe_id": "006",
+        "recipe_name": "Homemade Beef Burgers",
+        "short_description": "Juicy homemade beef burgers with all the classic fixings.",
+        "ingredients": [
+            "500 g ground beef",
+            "4 burger buns",
+            "100 g cheddar cheese, sliced",
+            "1 onion, sliced",
+            "A mixed vegetables",
+            "A slice lemon"
+        ],
+        "preparing_time": 35,
+        "calories": 450
+    }
+]

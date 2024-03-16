@@ -1,8 +1,18 @@
+import { useEffect, useState } from "react";
 import Cards from "../Cards/Cards";
 import Cook from "../Cook/Cook";
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const Recipes = () => {
+
+  const [recipes, setRecipes] = useState([]);
+
+  useEffect( () => {
+    fetch('recipes.json')
+    .then(res => res.json())
+    .then(data => setRecipes(data))
+  }, [])
+
   return (
     <div className="">
       <div className="text-center w-full md:w-[800px] mx-auto space-y-5 my-12">
@@ -15,13 +25,15 @@ const Recipes = () => {
       </div>
 
       <div className="mb-24 lg:flex gap-5">
-        <Cards></Cards>
+        <Cards recipes={recipes}></Cards>
         <Cook></Cook>
       </div>
     </div>
   );
 };
 
-// Recipes.propTypes = {};
+Recipes.propTypes = {
+  recipes: PropTypes.array.isRequired
+};
 
 export default Recipes;
