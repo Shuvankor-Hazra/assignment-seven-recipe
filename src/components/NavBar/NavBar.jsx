@@ -3,7 +3,7 @@ import { FaRegUserCircle } from "react-icons/fa";
 
 const NavBar = () => {
   return (
-      <div className="navbar bg-base-100 py-12">
+      <div className="navbar py-12">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex="0" role="button" className="btn btn-ghost lg:hidden">
@@ -40,7 +40,7 @@ const NavBar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-3xl font-extrabold text-[#79a272]">Cal-Recipe</a>
+          <a className="btn btn-ghost text-2xl lg:text-3xl font-extrabold text-[#79a272]">Cal-Recipe</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 font-medium">
