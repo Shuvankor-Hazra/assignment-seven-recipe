@@ -38,10 +38,10 @@ const Card = ({recipe, handleClick}) => {
           </ul>
         </div>
         <div className="flex gap-5 py-4">
-          <div className="flex items-center gap-2">
+          <div className="flex justify-center items-center gap-2">
             <FaRegClock></FaRegClock> <span>{preparing_time}</span>minutes
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex justify-center items-center gap-2">
             <ImFire></ImFire> <span>{calories}</span>calories
           </div>
         </div>
