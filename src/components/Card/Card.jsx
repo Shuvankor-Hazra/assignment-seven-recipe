@@ -54,7 +54,7 @@ const Card = ({recipe, handleClick}) => {
 };
 
 Card.propTypes = {
-  recipe: PropTypes.array.isRequired,
+  recipe: PropTypes.object.isRequired,
   handleClick: PropTypes.func.isRequired
 };
 

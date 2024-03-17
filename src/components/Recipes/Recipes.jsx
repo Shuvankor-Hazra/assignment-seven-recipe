@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Cards from "../Cards/Cards";
 import Cook from "../Cook/Cook";
-import PropTypes from "prop-types";
+import toast from "react-hot-toast";
 
 const Recipes = () => {
 
@@ -9,18 +9,48 @@ const Recipes = () => {
 
   const [wantCook, setWantCook] = useState([])
 
+  const [currentCooking, setCurrentCooking] = useState([]);
+
+  const [totalTime, setTotalTime] = useState(0);
+  
+  const [totalCalories, setTotalCalories] = useState(0);
+
   useEffect(() => {
     fetch("recipes.json")
       .then((res) => res.json())
       .then((data) => setRecipes(data));
   }, []);
 
-
-
   const handleClick = (recipe) => {
-    setWantCook(r => [...r, recipe])
-    // console.log(recipe)
+
+    const alreadyExist = wantCook.find(r => r.recipe_id === recipe.recipe_id);
+
+    if(!alreadyExist){
+      setWantCook(r => [...r, recipe])
+    } else {
+      return toast.error('Already exist')
+    }
   };
+
+
+  const handleCooking = (item) => {
+    setCurrentCooking([...currentCooking, item])
+    const nextItem = wantCook.filter((c) => c.recipe_id !== item.recipe_id);
+    setWantCook(nextItem);
+
+    const itemTime = item.preparing_time
+    setTotalTime(totalTime + itemTime)
+
+    const itemCalories = item.calories
+    setTotalCalories(totalCalories + itemCalories)
+
+  }
+
+
+
+
+
+
 
   return (
     <div>
@@ -34,14 +64,11 @@ const Recipes = () => {
       </div>
       <div className="mb-24 lg:flex gap-5">
         <Cards recipes={recipes} handleClick={handleClick}></Cards>
-        <Cook wantCook={wantCook}></Cook>
+        <Cook wantCook={wantCook} handleCooking={handleCooking} currentCooking={currentCooking} totalTime={totalTime} totalCalories={totalCalories}></Cook>
       </div>
     </div>
   );
 };
 
-Recipes.propTypes = {
-  recipes: PropTypes.array.isRequired,
-};
 
 export default Recipes;

@@ -59,7 +59,7 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="navbar-end space-x-4">
-          <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto rounded-full" />
+          <input type="text" name="search" placeholder="Search" className="input input-bordered w-24 md:w-auto rounded-full" />
           <FaRegUserCircle className=" btn text-5xl bg-[#A5DD9B] p-3 rounded-full"></FaRegUserCircle>
         </div>
       </div>
