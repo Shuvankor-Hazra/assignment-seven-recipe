@@ -10,7 +10,7 @@ function App() {
       <NavBar></NavBar>
       <Banner></Banner>
       <Recipes></Recipes>
-      <Toaster position="top-right"></Toaster>
+      <Toaster position="top-right" reverseOrder={true}></Toaster>
     </>
   );
 }

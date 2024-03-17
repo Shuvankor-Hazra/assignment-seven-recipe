@@ -28,7 +28,7 @@ const Recipes = () => {
     if(!alreadyExist){
       setWantCook(r => [...r, recipe])
     } else {
-      return toast.error('Already exist')
+      return toast.error('Item Already Exist for Cook')
     }
   };
 
