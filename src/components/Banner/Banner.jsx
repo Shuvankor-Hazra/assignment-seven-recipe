@@ -14,8 +14,7 @@ const Banner = () => {
           class tailored for you!
           </h1>
           <p className="leading-10">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae
+          Embark on a culinary adventure with a personalized cooking class designed just for you, igniting creativity and culinary mastery.
           </p>
           <div className="space-x-8">
             <button className="btn bg-[#A5DD9B] rounded-3xl">

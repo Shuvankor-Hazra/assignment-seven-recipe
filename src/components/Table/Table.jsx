@@ -1,41 +1,26 @@
-const Table = () => {
+import PropTypes from "prop-types";
+
+const Table = ({ item, index }) => {
+  console.log(item);
+
+  const { recipe_name } = item;
+
   return (
-    <div className=" pt-5">
-      <div className="text-left">
-        <div>
-          <tr className="w-[70%] flex justify-between">
-            <th>SL</th>
-            <th>Name</th>
-            <th>Time</th>
-            <th>Calories</th>
-          </tr>
-        </div>
-        <div>
-          <tr className="border-y-2">
-            <th>1</th>
-            <td>Spaghetti Bolognese</td>
-            <td>20 Minutes</td>
-            <td>600 Calories</td>
-            <td className="btn bg-[#A5DD9B] rounded-3xl">Ready</td>
-          </tr>
-          <tr className="border-y">
-            <th>2</th>
-            <td>Spaghetti Bolognese</td>
-            <td>20 Minutes</td>
-            <td>600 Calories</td>
-            <td className="btn bg-[#A5DD9B] rounded-3xl">Ready</td>
-          </tr>
-          <tr className="border-y">
-            <th>3</th>
-            <td>Spaghetti Bolognese</td>
-            <td>20 Minutes</td>
-            <td>600 Calories</td>
-            <td className="btn bg-[#A5DD9B] rounded-3xl">Ready</td>
-          </tr>
-        </div>
-      </div>
+    <div>
+      <ul className="border-b-2 py-2 flex items-center justify-center  ">
+        <li className="w-1/12 ">{index + 1}.</li>
+        <li className="w-5/12">{recipe_name}</li>
+        <li className="w2/12">20 Minutes</li>
+        <li className="w-2/12">600 Calories</li>
+        <li className="w-2/12 btn bg-[#A5DD9B] rounded-3xl">Ready</li>
+      </ul>
     </div>
   );
+};
+
+Table.propTypes = {
+  item: PropTypes.array.isRequired,
+  index: PropTypes.number.isRequired
 };
 
 export default Table;

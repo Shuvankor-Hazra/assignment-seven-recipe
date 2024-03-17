@@ -1,7 +1,9 @@
-import { FaRegClock, FaGripfire } from "react-icons/fa";
+import { FaRegClock } from "react-icons/fa";
+import { ImFire } from "react-icons/im";
 import PropTypes from "prop-types";
 
-const Card = ({ recipe }) => {
+const Card = ({recipe, handleClick}) => {
+  // console.log(recipe)
   const {
     recipe_image,
     recipe_name,
@@ -10,6 +12,7 @@ const Card = ({ recipe }) => {
     calories,
   } = recipe;
   const ingredients = recipe.ingredients;
+
 
   return (
     <div className="card w-full border-2 p-6">
@@ -39,11 +42,11 @@ const Card = ({ recipe }) => {
             <FaRegClock></FaRegClock> <span>{preparing_time}</span>minutes
           </div>
           <div className="flex items-center gap-2">
-            <FaGripfire></FaGripfire> <span>{calories}</span>calories
+            <ImFire></ImFire> <span>{calories}</span>calories
           </div>
         </div>
         <div className="card-actions">
-          <button className="btn bg-[#A5DD9B] rounded-3xl">Want to Cook</button>
+          <button onClick={()=>handleClick(recipe)} className="btn bg-[#A5DD9B] rounded-3xl">Want to Cook</button>
         </div>
       </div>
     </div>
@@ -52,6 +55,7 @@ const Card = ({ recipe }) => {
 
 Card.propTypes = {
   recipe: PropTypes.array.isRequired,
+  handleClick: PropTypes.func.isRequired
 };
 
 export default Card;
