@@ -7,14 +7,14 @@ const Table = ({ item, index, handleCooking }) => {
     <div>
       <ul className="border-b-2 py-2 flex items-center">
         <li className="w-1/12">{index + 1}.</li>
-        <li className="w-5/12">{recipe_name}</li>
+        <li className="w-4/12">{recipe_name}</li>
         <li className="w-2/12">{preparing_time} Minutes</li>
         <li className="w-2/12">{calories} Calories</li>
         <button
           onClick={()=>handleCooking(item)}
-          className="w-2/12 btn bg-[#A5DD9B] rounded-3xl"
+          className="w-3/12 btn bg-[#A5DD9B] rounded-3xl"
         >
-          Ready
+          Preparing
         </button>
       </ul>
     </div>

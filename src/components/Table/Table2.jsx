@@ -1,11 +1,9 @@
 import PropTypes from "prop-types";
 
-const Table2 = ({currentCooking}) => {
-  // console.log(currentCooking)
+const Table2 = ({ currentCooking }) => {
   return (
     <div className="overflow-x-auto pt-5">
       <table className="table">
-        {/* head */}
         <thead>
           <tr>
             <th>SL</th>
@@ -15,7 +13,6 @@ const Table2 = ({currentCooking}) => {
           </tr>
         </thead>
         <tbody>
-          {/* row 1 */}
           {currentCooking.map((i, id) => (
             <tr key={id}>
               <th> {id + 1} </th>

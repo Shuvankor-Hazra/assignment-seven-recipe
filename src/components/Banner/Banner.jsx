@@ -13,7 +13,7 @@ const Banner = () => {
           <h1 className="text-4xl lg:text-5xl font-bold">
           class tailored for you!
           </h1>
-          <p className="leading-10">
+          <p className="leading-7 lg:leading-10">
           Embark on a culinary adventure with a personalized cooking class designed just for you, igniting creativity and culinary mastery.
           </p>
           <div className="space-x-8">

@@ -17,13 +17,13 @@ const Card = ({recipe, handleClick}) => {
   return (
     <div className="card w-full border-2 p-6">
       <img
-        className="rounded-2xl mb-6 h-[200px]"
+        className="rounded-2xl mb-6 h-[200px] w-auto"
         src={recipe_image}
         alt="Food"
       />
       <div className="text-left">
         <h2 className="card-title">{recipe_name}</h2>
-        <p className="text-[#878787] py-4">{short_description}</p>
+        <p className="text-[#5e5e5e] py-4">{short_description}</p>
         <div className="border-y-2 py-5 ">
           <h4>
             Ingredients: <span>{ingredients.length}</span>
@@ -45,8 +45,8 @@ const Card = ({recipe, handleClick}) => {
             <ImFire></ImFire> <span>{calories}</span>calories
           </div>
         </div>
-        <div className="card-actions">
-          <button onClick={()=>handleClick(recipe)} className="btn bg-[#A5DD9B] rounded-3xl">Want to Cook</button>
+        <div className="card-actions ">
+          <button onClick={()=>handleClick(recipe)} className="btn bg-[#A5DD9B] rounded-3xl w-full md:w-auto">Want to Cook</button>
         </div>
       </div>
     </div>

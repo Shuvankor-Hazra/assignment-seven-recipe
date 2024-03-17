@@ -56,7 +56,7 @@ const Recipes = () => {
     <div>
       <div className="text-center w-full md:w-[800px] mx-auto space-y-5 my-12">
         <h2 className="text-2xl lg:text-4xl font-semibold">Our Recipes</h2>
-        <p>
+        <p className="text-[#5e5e5e]">
           Explore our diverse collection of recipes, ranging from traditional
           favorites to innovative creations, ensuring there is something
           delightful for everyone palate.
